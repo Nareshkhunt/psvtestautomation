@@ -23,15 +23,15 @@ Feature: Login Feature
     Then I should see the error <message> for <field>
 
     Examples:
-      | field    | inputValue | message                                            | validInput |
-      | email    | wrongInput | Sorry, dit is geen geldig e-mailadres              | pass123@1Abd |
-      | password | pass       | Je wachtwoord moet tussen 5 en 20 tekens lang zijn |test@gmail.com|
+      | field    | inputValue | message                                            | validInput     |
+      | email    | wrongInput | Sorry, dit is geen geldig e-mailadres              | pass123@1Abd   |
+      | password | pass       | Je wachtwoord moet tussen 5 en 20 tekens lang zijn | test@gmail.com |
 
   Scenario: Login with a valid user
     Given I am on the login page
     And I accept cookies on the login page
     And I setup cookie
     When I log in with a valid user:
-      | email              | password   |
+      | email               | password      |
       | nrshkhunt@gmail.com | Testingnl@123 |
 # Then I should see a welcome message about my account

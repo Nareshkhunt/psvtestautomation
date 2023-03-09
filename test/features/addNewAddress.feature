@@ -12,7 +12,7 @@ Feature: User can add a new address as a Logged in user
     And I click on Add new address
     And I click on gender title
     And I enter the following details
-      | firstName | lastName | streetAddress  | city               | zipCode |houseNumber |
-      | Naresh    | Khunt    | Vloedanker | Werkendam | 4251DS |2 |
+      | firstName | lastName | streetAddress | city      | zipCode | houseNumber |
+      | Naresh    | Khunt    | Vloedanker    | Werkendam | 4251DS  | 2           |
     And I click on new address button
     Then I should see street address  as "Vloedanker" of the new address
